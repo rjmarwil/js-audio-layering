@@ -16,6 +16,9 @@ $(document).ready(function() {
       $('#stopwatch').timer('resume');
       $(this).toggleClass("rotate");
       playingTracks.push(playTrack(track));
+      setTimeout(function(){
+        playingTracks.push(playTrack(track)); 
+      }, 2000);
     }
   });
 
