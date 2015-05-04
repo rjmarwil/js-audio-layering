@@ -63,3 +63,4 @@ You will see a left sidebar with a pre-loaded audio track. This track works by u
 ### Stretch Goal
 
 Become a composer. Instead of having the record start the "syphony" on a click, have the record prompt the user when to invoke each sound. Think Dance Dance Revolution style, where the user must press a key to start a given track at an appropriate time.
+# js-audio-layering
