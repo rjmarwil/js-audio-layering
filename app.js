@@ -17,8 +17,9 @@ $(document).ready(function() {
       $(this).toggleClass("rotate");
       playingTracks.push(playTrack(track));
       setTimeout(function(){
-        playingTracks.push(playTrack(track)); 
+        playingTracks.push(playTrack(track));
       }, 2000);
+      playSymphony();
     }
   });
 
@@ -32,6 +33,12 @@ $(document).ready(function() {
     $.each (audio, function(i, el){
       el.pause();
     });
+  }
+
+  function playSymphony() {
+    playingTracks.push(playTrack('tracks/drums2.wav'));
+    playingTracks.push(playTrack('tracks/didgi2.wav'));
+    playingTracks.push(playTrack('tracks/annoy.wav'));
   }
 
 });
